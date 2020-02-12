@@ -1,0 +1,99 @@
+body{
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+.head{
+    background:#282828;
+    margin-block-start: 0 !important;
+    margin-bottom: 0 0 0 15px;
+    line-height: 25px;
+    padding: 5px 15px;
+    position: sticky; 
+    left: 0; 
+    top: 0;
+}
+
+.blogSection{
+    margin: 0px auto; 
+    width: 600px;
+}
+
+.blog{
+    border: 1px solid #282828;
+    background:#282828;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    color: #cccccc;
+    padding: 20px 22px;
+    margin-bottom: 20px;
+}
+
+.blog .title{
+    text-align: justify;
+    display: block;
+    border-bottom: 1px solid rgba(150,150,150,0.3);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin: 0;
+    box-sizing: content-box;
+    margin: -20px -22px 20px;
+    padding: 20px 22px;
+    /* font-size: large;
+    margin-bottom: 0px;
+    padding: 10px;
+    line-height: 15px; */
+}
+
+.blog input{
+    width: 100%;
+    background-color: #1c1c1c;
+    line-height: 35px;
+    border: none;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 5px 15px;
+}
+
+.blog textarea{
+    width: 100%;
+    background-color: #1c1c1c;
+    line-height: 16px;
+    border: none;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 5px 15px;
+}
+
+.blog .body{
+    text-align: justify;
+    text-overflow: ellipsis;
+}
+
+.blog .actions{
+    margin: 0px;
+    font-size: small;
+}
+
+.actionBtn{
+    font-weight: bold;
+    /* margin: 10px; */
+    padding: 4px 6px;
+    border-radius: 4px;
+    user-select: none;
+}
+
+.actionBtn:hover{
+    background-color: #323232;
+}
+
+.addPostbtn{
+    background-color: darkcyan;
+    padding: 6px 18px;
+    text-align: right;
+}
+
+.addPostbtn:hover{
+    color: darkcyan;
+    background-color: #fff;
+}

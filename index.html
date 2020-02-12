@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Knockout Example</title>
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+    <div class="head">
+        <h1>Hello :/</h1>
+    </div>
+
+    <section class="blogSection">
+        <header>
+            Blogs
+        </header>
+        <section data-bind="using: NewPost">
+            <div class="blog">
+                <h4 class="title">
+                    <input type="text" data-bind="value: title" placeholder="Blog Title Here">
+                </h4>
+                <p class="body">
+                    <textarea rows="6" type="text" data-bind="value: body" placeholder="Blog Content"></textarea>
+                </p>
+                <p class="actions">
+                    <span class="actionBtn addPostbtn" data-bind="click: $parent.Events.AddPost">Add</span>
+                </p>
+            </div>
+        </section>
+
+        <section data-bind="foreach: Posts">
+            <div class="blog">
+                <h4 data-bind="text: title" class="title"></h4>
+                <p data-bind="text: body" class="body"></p>
+                <p class="actions">
+                    <span class="actionBtn" data-bind="click: null">Edit</span>
+                    <span class="actionBtn" data-bind="click: $parent.Events.DeletePost">Delete</span>
+                    <span class="actionBtn" data-bind="click: $parent.Events.ViewComments">Comments</span>
+                </p>
+            </div>
+        </section>
+    </section>
+</body>
+<script type="text/html" id="test">
+</script>
+<script type="text/javascript" src="./viewModel.js"></script>
+<script type="text/javascript" src="./apiService.js"></script>
+<script src="./knockout-3.5.1.debug.js" type="text/javascript"></script>
+<script>
+    var vm;
+    !function(){
+        vm = new ViewModel();
+        ko.applyBindings(vm);
+    }();
+</script>
+</html>
